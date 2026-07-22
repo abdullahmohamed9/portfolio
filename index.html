@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Abdelallah Mohamed | بورتفوليو</title>
+    <title>Abdelallah Mohamed | Analytics Engineer Portfolio</title>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
     <style>
         /* ===== RESET & BASE ===== */
         * {
@@ -21,7 +21,7 @@
         }
 
         body {
-            font-family: 'Cairo', sans-serif;
+            font-family: 'Inter', -apple-system, sans-serif;
             background: #f0f4f8;
             color: #1e293b;
             line-height: 1.7;
@@ -41,14 +41,14 @@
         /* ===== BUTTONS ===== */
         .btn {
             display: inline-block;
-            padding: 12px 32px;
+            padding: 13px 34px;
             border-radius: 50px;
-            font-weight: 600;
+            font-weight: 700;
             font-size: 1rem;
             transition: all 0.3s ease;
             border: none;
             cursor: pointer;
-            font-family: 'Cairo', sans-serif;
+            font-family: 'Inter', sans-serif;
         }
 
         .btn-primary {
@@ -60,31 +60,41 @@
         .btn-primary:hover {
             background: #1d4ed8;
             transform: translateY(-3px);
-            box-shadow: 0 8px 28px rgba(37, 99, 235, 0.45);
+            box-shadow: 0 8px 28px rgba(37, 99, 235, 0.5);
         }
 
         .btn-outline {
             background: transparent;
-            color: #2563eb;
-            border: 2px solid #2563eb;
+            color: #fff;
+            border: 2px solid #60a5fa;
         }
 
         .btn-outline:hover {
             background: #2563eb;
             color: #fff;
+            border-color: #2563eb;
+        }
+
+        .btn-white {
+            background: #fff;
+            color: #1e293b;
+        }
+
+        .btn-white:hover {
+            background: #e2e8f0;
+            transform: translateY(-3px);
         }
 
         /* ===== HEADER ===== */
         header {
-            background: rgba(255, 255, 255, 0.92);
+            background: rgba(15, 23, 42, 0.92);
             backdrop-filter: blur(12px);
             padding: 14px 0;
             position: fixed;
             width: 100%;
             top: 0;
             z-index: 1000;
-            border-bottom: 1px solid rgba(0, 0, 0, 0.06);
-            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
         }
 
         .header-content {
@@ -96,35 +106,37 @@
         .logo {
             font-size: 1.5rem;
             font-weight: 800;
-            color: #0f172a;
+            color: #fff;
         }
 
         .logo span {
-            color: #2563eb;
+            color: #60a5fa;
         }
 
         .nav-links {
             display: flex;
-            gap: 24px;
+            gap: 16px;
             list-style: none;
             font-weight: 600;
-            font-size: 0.95rem;
+            font-size: 0.85rem;
+            flex-wrap: wrap;
         }
 
         .nav-links a {
+            color: #cbd5e1;
             transition: color 0.3s;
             padding: 4px 0;
         }
 
         .nav-links a:hover {
-            color: #2563eb;
+            color: #60a5fa;
         }
 
         .hamburger {
             display: none;
             font-size: 1.6rem;
             cursor: pointer;
-            color: #0f172a;
+            color: #fff;
         }
 
         /* ===== SECTIONS ===== */
@@ -167,13 +179,14 @@
             margin-bottom: 48px;
             font-size: 1.1rem;
             font-weight: 400;
-            padding-right: 4px;
         }
 
-        /* ===== COVER / HERO ===== */
+        /* ============================================ */
+        /* ===== 1 - COVER ===== */
+        /* ============================================ */
         .cover {
             padding: 160px 0 100px;
-            background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #2563eb 100%);
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #1e3a8a 100%);
             min-height: 100vh;
             display: flex;
             align-items: center;
@@ -186,7 +199,7 @@
             position: absolute;
             width: 600px;
             height: 600px;
-            background: rgba(37, 99, 235, 0.1);
+            background: rgba(37, 99, 235, 0.08);
             border-radius: 50%;
             top: -200px;
             right: -200px;
@@ -197,7 +210,7 @@
             position: absolute;
             width: 400px;
             height: 400px;
-            background: rgba(37, 99, 235, 0.08);
+            background: rgba(37, 99, 235, 0.06);
             border-radius: 50%;
             bottom: -100px;
             left: -100px;
@@ -214,7 +227,7 @@
 
         .cover-content h1 {
             font-size: 3.6rem;
-            font-weight: 800;
+            font-weight: 900;
             color: #fff;
             line-height: 1.15;
         }
@@ -226,7 +239,7 @@
         .cover-content .tagline {
             font-size: 1.3rem;
             color: #94a3b8;
-            margin: 16px 0 24px;
+            margin: 16px 0 20px;
             font-weight: 400;
         }
 
@@ -246,17 +259,17 @@
         .cover-social {
             margin-top: 32px;
             display: flex;
-            gap: 20px;
+            gap: 16px;
         }
 
         .cover-social a {
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             color: #94a3b8;
             transition: all 0.3s;
             width: 44px;
             height: 44px;
             border-radius: 50%;
-            background: rgba(255, 255, 255, 0.08);
+            background: rgba(255, 255, 255, 0.06);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -288,12 +301,14 @@
 
         .avatar-circle .initials {
             font-size: 5rem;
-            font-weight: 800;
+            font-weight: 900;
             color: #fff;
             letter-spacing: 4px;
         }
 
-        /* ===== ABOUT ===== */
+        /* ============================================ */
+        /* ===== 2 - ABOUT ===== */
+        /* ============================================ */
         .about-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -313,10 +328,9 @@
         }
 
         .stat-card {
-            background: #fff;
+            background: #f8fafc;
             padding: 24px 20px;
             border-radius: 16px;
-            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
             border: 1px solid #e2e8f0;
             text-align: center;
             transition: all 0.3s;
@@ -324,7 +338,7 @@
 
         .stat-card:hover {
             transform: translateY(-4px);
-            box-shadow: 0 12px 36px rgba(0, 0, 0, 0.08);
+            box-shadow: 0 12px 36px rgba(0, 0, 0, 0.06);
             border-color: #2563eb;
         }
 
@@ -336,7 +350,7 @@
 
         .stat-card h3 {
             font-size: 1.8rem;
-            font-weight: 700;
+            font-weight: 800;
             color: #0f172a;
         }
 
@@ -345,7 +359,9 @@
             font-size: 0.95rem;
         }
 
-        /* ===== EDUCATION ===== */
+        /* ============================================ */
+        /* ===== 3 - EDUCATION ===== */
+        /* ============================================ */
         .edu-timeline {
             display: flex;
             flex-direction: column;
@@ -356,16 +372,16 @@
             background: #fff;
             padding: 28px 32px;
             border-radius: 16px;
-            border-right: 5px solid #2563eb;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+            border-left: 5px solid #2563eb;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
             border: 1px solid #e2e8f0;
-            border-right-width: 5px;
+            border-left-width: 5px;
             transition: all 0.3s;
         }
 
         .edu-item:hover {
-            box-shadow: 0 8px 28px rgba(0, 0, 0, 0.06);
-            transform: translateX(-4px);
+            box-shadow: 0 8px 28px rgba(0, 0, 0, 0.08);
+            transform: translateX(4px);
         }
 
         .edu-item .head {
@@ -399,7 +415,9 @@
             margin-top: 6px;
         }
 
-        /* ===== SKILLS ===== */
+        /* ============================================ */
+        /* ===== 4 - SKILLS ===== */
+        /* ============================================ */
         .skills-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -446,11 +464,13 @@
         }
 
         .skill-tag i {
-            margin-left: 8px;
+            margin-right: 8px;
             font-size: 0.85rem;
         }
 
-        /* ===== WORK EXPERIENCE ===== */
+        /* ============================================ */
+        /* ===== 5 - WORK EXPERIENCE ===== */
+        /* ============================================ */
         .exp-timeline {
             display: flex;
             flex-direction: column;
@@ -461,16 +481,16 @@
             background: #fff;
             padding: 28px 32px;
             border-radius: 16px;
-            border-right: 5px solid #2563eb;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+            border-left: 5px solid #2563eb;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
             border: 1px solid #e2e8f0;
-            border-right-width: 5px;
+            border-left-width: 5px;
             transition: all 0.3s;
         }
 
         .exp-item:hover {
-            box-shadow: 0 8px 28px rgba(0, 0, 0, 0.06);
-            transform: translateX(-4px);
+            box-shadow: 0 8px 28px rgba(0, 0, 0, 0.08);
+            transform: translateX(4px);
         }
 
         .exp-item .head {
@@ -500,7 +520,7 @@
 
         .exp-item ul {
             margin-top: 10px;
-            padding-right: 20px;
+            padding-left: 20px;
             color: #475569;
         }
 
@@ -509,10 +529,12 @@
             font-size: 0.95rem;
         }
 
-        /* ===== SERVICES ===== */
+        /* ============================================ */
+        /* ===== 6 - SERVICES ===== */
+        /* ============================================ */
         .services-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 30px;
         }
 
@@ -550,10 +572,12 @@
             font-size: 0.95rem;
         }
 
-        /* ===== PROJECTS ===== */
+        /* ============================================ */
+        /* ===== 7 - PROJECTS ===== */
+        /* ============================================ */
         .projects-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 32px;
         }
 
@@ -606,10 +630,12 @@
             color: #334155;
         }
 
-        /* ===== ACHIEVEMENTS ===== */
+        /* ============================================ */
+        /* ===== 8 - ACHIEVEMENTS ===== */
+        /* ============================================ */
         .achievements-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 24px;
         }
 
@@ -636,7 +662,7 @@
 
         .achievement-card h3 {
             font-size: 1.6rem;
-            font-weight: 700;
+            font-weight: 800;
             color: #0f172a;
         }
 
@@ -645,7 +671,9 @@
             font-size: 0.9rem;
         }
 
-        /* ===== TESTIMONIALS ===== */
+        /* ============================================ */
+        /* ===== 9 - TESTIMONIALS ===== */
+        /* ============================================ */
         .testimonials-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -694,8 +722,9 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            font-weight: 700;
+            font-weight: 800;
             font-size: 1.2rem;
+            flex-shrink: 0;
         }
 
         .testimonial-card .author .info h4 {
@@ -709,7 +738,9 @@
             font-size: 0.85rem;
         }
 
-        /* ===== CONTACT ===== */
+        /* ============================================ */
+        /* ===== 10 - CONTACT ===== */
+        /* ============================================ */
         .contact-wrapper {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -763,7 +794,7 @@
             padding: 14px 18px;
             border: 1px solid #e2e8f0;
             border-radius: 12px;
-            font-family: 'Cairo', sans-serif;
+            font-family: 'Inter', sans-serif;
             font-size: 0.95rem;
             background: #fff;
             transition: border 0.3s;
@@ -793,7 +824,7 @@
         footer .footer-social {
             display: flex;
             justify-content: center;
-            gap: 20px;
+            gap: 16px;
             margin-bottom: 18px;
         }
 
@@ -824,7 +855,9 @@
             color: #ef4444;
         }
 
+        /* ============================================ */
         /* ===== RESPONSIVE ===== */
+        /* ============================================ */
         @media (max-width: 1024px) {
             .cover-grid {
                 grid-template-columns: 1fr;
@@ -877,16 +910,15 @@
             .nav-links {
                 display: none;
                 flex-direction: column;
-                background: #fff;
+                background: #0f172a;
                 padding: 24px;
                 border-radius: 16px;
-                box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
                 position: absolute;
                 top: 72px;
-                left: 24px;
-                width: 200px;
+                left: 16px;
+                right: 16px;
                 gap: 12px;
-                border: 1px solid #e2e8f0;
+                border: 1px solid rgba(255, 255, 255, 0.06);
             }
 
             .nav-links.open {
@@ -918,7 +950,7 @@
             }
 
             .services-grid {
-                grid-template-columns: 1fr;
+                grid-template-columns: 1fr 1fr;
             }
 
             .testimonials-grid {
@@ -954,6 +986,11 @@
             .section-title::after {
                 width: 40px;
             }
+
+            .nav-links a {
+                font-size: 1rem;
+                padding: 6px 0;
+            }
         }
 
         @media (max-width: 480px) {
@@ -962,6 +999,10 @@
             }
 
             .achievements-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .services-grid {
                 grid-template-columns: 1fr;
             }
 
@@ -982,49 +1023,57 @@
             .exp-item {
                 padding: 20px;
             }
+
+            .cover-social a {
+                width: 38px;
+                height: 38px;
+                font-size: 1rem;
+            }
         }
     </style>
 </head>
 <body>
 
+    <!-- ============================================ -->
     <!-- ===== HEADER ===== -->
+    <!-- ============================================ -->
     <header>
         <div class="container header-content">
-            <div class="logo">عبد<span>الله</span></div>
+            <div class="logo">Abdel<span>allah</span></div>
             <ul class="nav-links" id="navLinks">
-                <li><a href="#cover">الرئيسية</a></li>
-                <li><a href="#about">عني</a></li>
-                <li><a href="#education">التعليم</a></li>
-                <li><a href="#skills">المهارات</a></li>
-                <li><a href="#experience">الخبرات</a></li>
-                <li><a href="#services">الخدمات</a></li>
-                <li><a href="#projects">المشاريع</a></li>
-                <li><a href="#achievements">الإنجازات</a></li>
-                <li><a href="#testimonials">آراء العملاء</a></li>
-                <li><a href="#contact">اتصل بي</a></li>
+                <li><a href="#cover">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-            <div class="hamburger" id="hamburger" aria-label="القائمة">
+            <div class="hamburger" id="hamburger" aria-label="Menu">
                 <i class="fas fa-bars"></i>
             </div>
         </div>
     </header>
 
-    <!-- ============================================= -->
-    <!-- ===== COVER ===== -->
-    <!-- ============================================= -->
+    <!-- ============================================ -->
+    <!-- ===== 1 - COVER ===== -->
+    <!-- ============================================ -->
     <section class="cover" id="cover">
         <div class="container cover-grid">
             <div class="cover-content">
-                <h1>مرحباً، أنا <span>عبدالله محمد</span><br />محلل بيانات</h1>
-                <p class="tagline">مطور ذكاء أعمال | خبير تحليل البيانات</p>
+                <h1>Hi, I'm <span>Abdelallah</span><br />Analytics Engineer</h1>
+                <p class="tagline">Data Analyst &amp; BI Developer</p>
                 <p class="bio">
-                    أحوّل البيانات الخام إلى رؤى استراتيجية تدعم اتخاذ القرار. 
-                    متخصص في بناء لوحات المعلومات التفاعلية باستخدام Power BI و Excel، 
-                    مع خبرة في ETL ونمذجة البيانات.
+                    I transform raw data into strategic insights that drive decision-making.
+                    I specialize in building interactive dashboards using Power BI and Excel,
+                    with expertise in ETL processes and data modeling.
                 </p>
                 <div class="cover-buttons">
-                    <a href="#projects" class="btn btn-primary">شوف مشاريعي</a>
-                    <a href="#contact" class="btn btn-outline" style="color:#fff;border-color:#60a5fa;">تواصل معي</a>
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-outline">Contact Me</a>
                 </div>
                 <div class="cover-social">
                     <a href="https://www.linkedin.com/in/meshabullah-mohamed-7b316439a" target="_blank"><i class="fab fa-linkedin-in"></i></a>
@@ -1035,120 +1084,118 @@
             </div>
             <div class="cover-avatar">
                 <div class="avatar-circle">
-                    <span class="initials">ع م</span>
+                    <span class="initials">AM</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ============================================= -->
-    <!-- ===== ABOUT ===== -->
-    <!-- ============================================= -->
+    <!-- ============================================ -->
+    <!-- ===== 2 - ABOUT ===== -->
+    <!-- ============================================ -->
     <section class="section section-alt" id="about">
         <div class="container">
-            <h2 class="section-title"><i class="fas fa-user"></i> عني</h2>
-            <p class="section-sub">تعرف أكثر على شخصي وخبراتي</p>
+            <h2 class="section-title"><i class="fas fa-user"></i> About Me</h2>
+            <p class="section-sub">Learn more about who I am and what I do</p>
             <div class="about-grid">
                 <div class="about-text">
                     <p>
-                        <strong>أنا عبدالله محمد</strong>، محلل بيانات ومطور ذكاء أعمال شغوف بتحويل البيانات 
-                        إلى قصص مرئية وقرارات استراتيجية. لدي خبرة قوية في بناء لوحات المعلومات 
-                        التفاعلية باستخدام Power BI و Excel، مع معرفة متعمقة بعمليات ETL ونمذجة البيانات.
+                        <strong>I'm Abdelallah Mohamed</strong>, a passionate Data Analyst and Business Intelligence Developer
+                        with strong experience in transforming raw data into meaningful insights that support strategic decision-making.
                     </p>
                     <p>
-                        أجيد كتابة مقاييس DAX، وإجراء تحليلات بيانات معقدة باستخدام SQL، 
-                        واستخدام Python لأتمتة المهام والتحليلات المتقدمة. أسعى دائمًا لتعلم 
-                        وتحسين أفضل الممارسات في تحليل البيانات وتطوير ذكاء الأعمال.
+                        I specialize in building interactive dashboards and reports using <strong>Power BI</strong> and <strong>Excel</strong>,
+                        with solid knowledge of ETL processes and data modeling. I am proficient in writing DAX measures,
+                        performing complex data analysis using SQL, and utilizing Python for automation and advanced analytics.
                     </p>
                     <p>
-                        أؤمن بأن البيانات هي النفط الجديد، ودوري هو تحويل هذا النفط الخام إلى 
-                        وقود يحرك نجاح المؤسسات.
+                        I am always eager to learn, improve, and apply best practices in data analysis and Business Intelligence development.
                     </p>
                 </div>
                 <div class="about-stats">
                     <div class="stat-card">
                         <i class="fas fa-graduation-cap"></i>
                         <h3>2027</h3>
-                        <p>سنة التخرج المتوقعة</p>
+                        <p>Expected Graduation</p>
                     </div>
                     <div class="stat-card">
                         <i class="fas fa-code"></i>
                         <h3>4+</h3>
-                        <p>مشاريع منجزة</p>
+                        <p>Projects Completed</p>
                     </div>
                     <div class="stat-card">
                         <i class="fas fa-database"></i>
                         <h3>SQL</h3>
-                        <p>خبرة متقدمة</p>
+                        <p>Advanced Expertise</p>
                     </div>
                     <div class="stat-card">
                         <i class="fas fa-chart-bar"></i>
                         <h3>Power BI</h3>
-                        <p>لوحات تفاعلية</p>
+                        <p>Interactive Dashboards</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ============================================= -->
-    <!-- ===== EDUCATION ===== -->
-    <!-- ============================================= -->
+    <!-- ============================================ -->
+    <!-- ===== 3 - EDUCATION ===== -->
+    <!-- ============================================ -->
     <section class="section" id="education">
         <div class="container">
-            <h2 class="section-title"><i class="fas fa-university"></i> التعليم</h2>
-            <p class="section-sub">رحلتي الأكاديمية والمهنية</p>
+            <h2 class="section-title"><i class="fas fa-university"></i> Education</h2>
+            <p class="section-sub">My academic and professional journey</p>
             <div class="edu-timeline">
                 <div class="edu-item">
                     <div class="head">
-                        <h3>كلية علوم الحاسب ونظم المعلومات</h3>
+                        <h3>Faculty of Computer Science &amp; Information Systems</h3>
                         <span class="date">2023 – 2027</span>
                     </div>
-                    <div class="org">أكاديمية الشروق - القاهرة</div>
-                    <p>بكالوريوس علوم الحاسب، تخصص تحليل بيانات وذكاء اصطناعي وتطوير برمجيات.</p>
+                    <div class="org">EL Shorouk Academy - Cairo, Egypt</div>
+                    <p>B.Sc. in Computer Science — specializing in Data Analysis, Artificial Intelligence, and Software Development.</p>
                 </div>
                 <div class="edu-item">
                     <div class="head">
-                        <h3>برنامج DEPI لمحللي البيانات</h3>
-                        <span class="date">2025 – حتى الآن</span>
+                        <h3>DEPI Data Analyst Program</h3>
+                        <span class="date">2025 – Present</span>
                     </div>
-                    <div class="org">برنامج تدريبي مكثف</div>
-                    <p>تدريب شامل يغطي Power BI، DAX، حوكمة البيانات، والتحليلات المتقدمة.</p>
+                    <div class="org">Intensive Training Program</div>
+                    <p>Comprehensive training covering Power BI, DAX, Data Governance, and Advanced Analytics.</p>
                 </div>
                 <div class="edu-item">
                     <div class="head">
-                        <h3>دورة تطوير الواجهات الأمامية - IEEE</h3>
+                        <h3>Front-End Development — IEEE</h3>
                         <span class="date">2024</span>
                     </div>
-                    <div class="org">IEEE أكاديمية الشروق</div>
-                    <p>دورة تطبيقية لبناء مواقع ويب متجاوبة باستخدام HTML، CSS، JavaScript، و Bootstrap.</p>
+                    <div class="org">IEEE EL Shorouk Academy SB</div>
+                    <p>Hands-on web development course building responsive websites using HTML, CSS, JavaScript, and Bootstrap.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ============================================= -->
-    <!-- ===== SKILLS ===== -->
-    <!-- ============================================= -->
+    <!-- ============================================ -->
+    <!-- ===== 4 - SKILLS ===== -->
+    <!-- ============================================ -->
     <section class="section section-alt" id="skills">
         <div class="container">
-            <h2 class="section-title"><i class="fas fa-cogs"></i> المهارات</h2>
-            <p class="section-sub">الأدوات والتقنيات التي أعمل بها</p>
+            <h2 class="section-title"><i class="fas fa-cogs"></i> Skills</h2>
+            <p class="section-sub">Technologies and tools I work with</p>
             <div class="skills-grid">
                 <div class="skill-category">
-                    <h3><i class="fas fa-laptop-code"></i> المهارات التقنية</h3>
+                    <h3><i class="fas fa-laptop-code"></i> Technical Skills</h3>
                     <div class="skill-tags">
-                        <span class="skill-tag"><i class="fas fa-chart-pie"></i> تحليل البيانات</span>
-                        <span class="skill-tag"><i class="fas fa-brain"></i> الذكاء الاصطناعي</span>
+                        <span class="skill-tag"><i class="fas fa-chart-pie"></i> Data Analysis</span>
+                        <span class="skill-tag"><i class="fas fa-brain"></i> Artificial Intelligence</span>
                         <span class="skill-tag"><i class="fab fa-python"></i> Python</span>
                         <span class="skill-tag"><i class="fab fa-js"></i> JavaScript</span>
-                        <span class="skill-tag"><i class="fab fa-git-alt"></i> Git & GitHub</span>
-                        <span class="skill-tag"><i class="fas fa-robot"></i> الأتمتة</span>
+                        <span class="skill-tag"><i class="fab fa-git-alt"></i> Git &amp; GitHub</span>
+                        <span class="skill-tag"><i class="fas fa-robot"></i> Automation</span>
                         <span class="skill-tag"><i class="fas fa-database"></i> SQL Server</span>
                         <span class="skill-tag"><i class="fas fa-chart-line"></i> Power BI</span>
                         <span class="skill-tag"><i class="fas fa-file-excel"></i> Excel</span>
                         <span class="skill-tag"><i class="fas fa-code"></i> DAX</span>
-                        <span class="skill-tag"><i class="fas fa-cubes"></i> نمذجة البيانات</span>
+                        <span class="skill-tag"><i class="fas fa-cubes"></i> Data Modeling</span>
                         <span class="skill-tag"><i class="fas fa-arrows-spin"></i> ETL</span>
                         <span class="skill-tag"><i class="fas fa-html5"></i> HTML5</span>
                         <span class="skill-tag"><i class="fas fa-css3-alt"></i> CSS3</span>
@@ -1156,119 +1203,119 @@
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3><i class="fas fa-users"></i> المهارات الشخصية</h3>
+                    <h3><i class="fas fa-users"></i> Soft Skills</h3>
                     <div class="skill-tags">
-                        <span class="skill-tag"><i class="fas fa-people-group"></i> العمل الجماعي</span>
-                        <span class="skill-tag"><i class="fas fa-clock"></i> إدارة الوقت</span>
-                        <span class="skill-tag"><i class="fas fa-lightbulb"></i> حل المشكلات</span>
-                        <span class="skill-tag"><i class="fas fa-graduation-cap"></i> التعلم الذاتي</span>
-                        <span class="skill-tag"><i class="fas fa-flag"></i> القيادة</span>
-                        <span class="skill-tag"><i class="fas fa-comments"></i> التواصل</span>
-                        <span class="skill-tag"><i class="fas fa-handshake"></i> التفاوض</span>
-                        <span class="skill-tag"><i class="fas fa-clock"></i> الالتزام بالمواعيد</span>
+                        <span class="skill-tag"><i class="fas fa-people-group"></i> Team Work</span>
+                        <span class="skill-tag"><i class="fas fa-clock"></i> Time Management</span>
+                        <span class="skill-tag"><i class="fas fa-lightbulb"></i> Problem Solving</span>
+                        <span class="skill-tag"><i class="fas fa-graduation-cap"></i> Self Learning</span>
+                        <span class="skill-tag"><i class="fas fa-flag"></i> Leadership</span>
+                        <span class="skill-tag"><i class="fas fa-comments"></i> Communication</span>
+                        <span class="skill-tag"><i class="fas fa-handshake"></i> Negotiation</span>
+                        <span class="skill-tag"><i class="fas fa-clock"></i> Punctuality</span>
                     </div>
                     <br />
-                    <h3 style="margin-top:20px;"><i class="fas fa-language"></i> اللغات</h3>
+                    <h3 style="margin-top:20px;"><i class="fas fa-language"></i> Languages</h3>
                     <div class="skill-tags">
-                        <span class="skill-tag"><i class="fas fa-flag"></i> العربية — اللغة الأم</span>
-                        <span class="skill-tag"><i class="fas fa-flag"></i> الإنجليزية — جيد جداً</span>
+                        <span class="skill-tag"><i class="fas fa-flag"></i> Arabic — Native</span>
+                        <span class="skill-tag"><i class="fas fa-flag"></i> English — Very Good</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ============================================= -->
-    <!-- ===== WORK EXPERIENCE ===== -->
-    <!-- ============================================= -->
+    <!-- ============================================ -->
+    <!-- ===== 5 - WORK EXPERIENCE ===== -->
+    <!-- ============================================ -->
     <section class="section" id="experience">
         <div class="container">
-            <h2 class="section-title"><i class="fas fa-briefcase"></i> الخبرات العملية</h2>
-            <p class="section-sub">أين عملت وماذا أنجزت</p>
+            <h2 class="section-title"><i class="fas fa-briefcase"></i> Work Experience</h2>
+            <p class="section-sub">Where I've worked and what I've achieved</p>
             <div class="exp-timeline">
                 <div class="exp-item">
                     <div class="head">
-                        <h3>محلل بيانات - متدرب</h3>
-                        <span class="date">2025 – حتى الآن</span>
+                        <h3>Data Analyst — Intern</h3>
+                        <span class="date">2025 – Present</span>
                     </div>
-                    <div class="company">برنامج DEPI</div>
+                    <div class="company">DEPI Program</div>
                     <ul>
-                        <li>بناء لوحات معلومات تفاعلية باستخدام Power BI</li>
-                        <li>كتابة مقاييس DAX المعقدة لتحليل الأداء</li>
-                        <li>تنفيذ عمليات ETL لتنظيف وتحويل البيانات</li>
-                        <li>تطبيق مبادئ حوكمة البيانات</li>
+                        <li>Building interactive dashboards using Power BI</li>
+                        <li>Writing complex DAX measures for performance analysis</li>
+                        <li>Executing ETL processes for data cleaning and transformation</li>
+                        <li>Applying data governance principles</li>
                     </ul>
                 </div>
                 <div class="exp-item">
                     <div class="head">
-                        <h3>مطور واجهات أمامية - متطوع</h3>
+                        <h3>Front-End Developer — Volunteer</h3>
                         <span class="date">2024</span>
                     </div>
-                    <div class="company">IEEE أكاديمية الشروق</div>
+                    <div class="company">IEEE EL Shorouk Academy</div>
                     <ul>
-                        <li>بناء مواقع ويب متجاوبة باستخدام HTML، CSS، JavaScript</li>
-                        <li>تصميم واجهات مستخدم جذابة وسهلة الاستخدام</li>
-                        <li>العمل ضمن فريق لتطوير مشاريع تطبيقية</li>
+                        <li>Building responsive websites using HTML, CSS, JavaScript</li>
+                        <li>Designing attractive and user-friendly interfaces</li>
+                        <li>Collaborating within teams to develop application projects</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ============================================= -->
-    <!-- ===== SERVICES ===== -->
-    <!-- ============================================= -->
+    <!-- ============================================ -->
+    <!-- ===== 6 - SERVICES ===== -->
+    <!-- ============================================ -->
     <section class="section section-alt" id="services">
         <div class="container">
-            <h2 class="section-title"><i class="fas fa-handshake"></i> الخدمات التي أقدمها</h2>
-            <p class="section-sub">كيف يمكنني مساعدتك</p>
+            <h2 class="section-title"><i class="fas fa-handshake"></i> Services I Offer</h2>
+            <p class="section-sub">How I can help you</p>
             <div class="services-grid">
                 <div class="service-card">
                     <div class="icon"><i class="fas fa-chart-bar"></i></div>
-                    <h3>تحليل البيانات</h3>
-                    <p>تحليل البيانات الخام واستخراج رؤى قيمة تساعد في اتخاذ القرارات الاستراتيجية.</p>
+                    <h3>Data Analysis</h3>
+                    <p>Analyze raw data and extract valuable insights that support strategic decision-making.</p>
                 </div>
                 <div class="service-card">
                     <div class="icon"><i class="fas fa-dashboard"></i></div>
-                    <h3>لوحات المعلومات</h3>
-                    <p>بناء لوحات معلومات تفاعلية باستخدام Power BI لعرض الأداء والمؤشرات الرئيسية.</p>
+                    <h3>Dashboards</h3>
+                    <p>Build interactive dashboards using Power BI to display performance and key metrics.</p>
                 </div>
                 <div class="service-card">
                     <div class="icon"><i class="fas fa-database"></i></div>
-                    <h3>إدارة قواعد البيانات</h3>
-                    <p>تصميم وتنفيذ قواعد بيانات SQL مع تحسين الاستعلامات والأداء.</p>
+                    <h3>Database Management</h3>
+                    <p>Design and implement SQL databases with query optimization and performance tuning.</p>
                 </div>
                 <div class="service-card">
                     <div class="icon"><i class="fas fa-robot"></i></div>
-                    <h3>أتمتة العمليات</h3>
-                    <p>أتمتة المهام المتكررة باستخدام Python لزيادة الكفاءة والإنتاجية.</p>
+                    <h3>Process Automation</h3>
+                    <p>Automate repetitive tasks using Python to increase efficiency and productivity.</p>
                 </div>
                 <div class="service-card">
                     <div class="icon"><i class="fas fa-file-excel"></i></div>
-                    <h3>تقارير Excel</h3>
-                    <p>إعداد تقارير متقدمة باستخدام Excel مع رسوم بيانية وجداول محورية.</p>
+                    <h3>Excel Reports</h3>
+                    <p>Create advanced reports using Excel with charts and pivot tables.</p>
                 </div>
                 <div class="service-card">
                     <div class="icon"><i class="fas fa-brain"></i></div>
-                    <h3>استشارات ذكاء الأعمال</h3>
-                    <p>تقديم استشارات في مجال ذكاء الأعمال وتحليل البيانات للمؤسسات.</p>
+                    <h3>BI Consulting</h3>
+                    <p>Provide business intelligence and data analysis consulting for organizations.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ============================================= -->
-    <!-- ===== PROJECTS ===== -->
-    <!-- ============================================= -->
+    <!-- ============================================ -->
+    <!-- ===== 7 - PROJECTS ===== -->
+    <!-- ============================================ -->
     <section class="section" id="projects">
         <div class="container">
-            <h2 class="section-title"><i class="fas fa-folder-open"></i> المشاريع</h2>
-            <p class="section-sub">نماذج من أعمالي</p>
+            <h2 class="section-title"><i class="fas fa-folder-open"></i> Projects</h2>
+            <p class="section-sub">Some of my work</p>
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="icon"><i class="fas fa-tasks"></i></div>
-                    <h3>تطبيق قائمة المهام</h3>
-                    <p>تطبيق ويب تفاعلي لإدارة المهام اليومية مع إمكانية الإضافة، الحذف، والتحديث.</p>
+                    <h3>To-Do List Web App</h3>
+                    <p>Interactive web app for managing daily tasks with create, delete, and update functionality.</p>
                     <div class="tech">
                         <span>HTML</span>
                         <span>CSS</span>
@@ -1277,8 +1324,8 @@
                 </div>
                 <div class="project-card">
                     <div class="icon"><i class="fas fa-landmark"></i></div>
-                    <h3>نظام الصراف الآلي</h3>
-                    <p>محاكاة لنظام الصراف الآلي بلغة C++ مع ميزات الاستعلام، الإيداع، والسحب.</p>
+                    <h3>ATM System</h3>
+                    <p>ATM simulation in C++ with balance inquiry, deposit, and withdrawal features.</p>
                     <div class="tech">
                         <span>C++</span>
                         <span>OOP</span>
@@ -1286,8 +1333,8 @@
                 </div>
                 <div class="project-card">
                     <div class="icon"><i class="fas fa-database"></i></div>
-                    <h3>نظام إدارة قواعد البيانات</h3>
-                    <p>تصميم وتنفيذ قاعدة بيانات SQL Server مع علاقات واستعلامات متقدمة.</p>
+                    <h3>Database Management System</h3>
+                    <p>Designed and implemented a SQL Server database with relationships and advanced queries.</p>
                     <div class="tech">
                         <span>SQL Server</span>
                         <span>ERD</span>
@@ -1295,8 +1342,8 @@
                 </div>
                 <div class="project-card">
                     <div class="icon"><i class="fas fa-chart-line"></i></div>
-                    <h3>لوحة معلومات المبيعات</h3>
-                    <p>لوحة معلومات تفاعلية باستخدام Power BI لتحليل أداء المبيعات والأرباح.</p>
+                    <h3>Sales Dashboard</h3>
+                    <p>Interactive Power BI dashboard for analyzing sales performance and profitability.</p>
                     <div class="tech">
                         <span>Power BI</span>
                         <span>DAX</span>
@@ -1307,45 +1354,45 @@
         </div>
     </section>
 
-    <!-- ============================================= -->
-    <!-- ===== ACHIEVEMENTS ===== -->
-    <!-- ============================================= -->
+    <!-- ============================================ -->
+    <!-- ===== 8 - ACHIEVEMENTS ===== -->
+    <!-- ============================================ -->
     <section class="section section-alt" id="achievements">
         <div class="container">
-            <h2 class="section-title"><i class="fas fa-trophy"></i> الإنجازات</h2>
-            <p class="section-sub">ما حققته خلال مسيرتي</p>
+            <h2 class="section-title"><i class="fas fa-trophy"></i> Achievements</h2>
+            <p class="section-sub">What I've accomplished</p>
             <div class="achievements-grid">
                 <div class="achievement-card">
                     <div class="icon"><i class="fas fa-certificate"></i></div>
                     <h3>4+</h3>
-                    <p>شهادات تدريبية معتمدة</p>
+                    <p>Certified Trainings</p>
                 </div>
                 <div class="achievement-card">
                     <div class="icon"><i class="fas fa-project-diagram"></i></div>
                     <h3>4</h3>
-                    <p>مشاريع مكتملة</p>
+                    <p>Completed Projects</p>
                 </div>
                 <div class="achievement-card">
                     <div class="icon"><i class="fas fa-users"></i></div>
                     <h3>2</h3>
-                    <p>برامج تدريبية مكثفة</p>
+                    <p>Intensive Programs</p>
                 </div>
                 <div class="achievement-card">
                     <div class="icon"><i class="fas fa-code"></i></div>
                     <h3>5+</h3>
-                    <p>تقنيات مكتسبة</p>
+                    <p>Technologies Mastered</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ============================================= -->
-    <!-- ===== TESTIMONIALS ===== -->
-    <!-- ============================================= -->
+    <!-- ============================================ -->
+    <!-- ===== 9 - TESTIMONIALS ===== -->
+    <!-- ============================================ -->
     <section class="section" id="testimonials">
         <div class="container">
-            <h2 class="section-title"><i class="fas fa-quote-right"></i> آراء العملاء</h2>
-            <p class="section-sub">ماذا يقول عني من عملت معهم</p>
+            <h2 class="section-title"><i class="fas fa-quote-right"></i> Testimonials</h2>
+            <p class="section-sub">What people say about me</p>
             <div class="testimonials-grid">
                 <div class="testimonial-card">
                     <div class="stars">
@@ -1356,13 +1403,13 @@
                         <i class="fas fa-star"></i>
                     </div>
                     <p class="quote">
-                        "عبدالله محلل بيانات متميز، لوحات المعلومات التي أنشأها ساعدتنا في اتخاذ قرارات أفضل وأسرع."
+                        "Abdelallah is an exceptional data analyst. The dashboards he created helped us make better and faster decisions."
                     </p>
                     <div class="author">
-                        <div class="avatar">أ</div>
+                        <div class="avatar">AS</div>
                         <div class="info">
-                            <h4>أحمد سعيد</h4>
-                            <p>مدير تطوير الأعمال</p>
+                            <h4>Ahmed Saeed</h4>
+                            <p>Business Development Manager</p>
                         </div>
                     </div>
                 </div>
@@ -1375,13 +1422,13 @@
                         <i class="fas fa-star"></i>
                     </div>
                     <p class="quote">
-                        "أبدع عبدالله في تحليل بياناتنا المعقدة وتقديم رؤى قيمة ساهمت في تحسين أدائنا."
+                        "Abdelallah excelled in analyzing our complex data and provided valuable insights that improved our performance."
                     </p>
                     <div class="author">
-                        <div class="avatar">م</div>
+                        <div class="avatar">MF</div>
                         <div class="info">
-                            <h4>محمد فتحي</h4>
-                            <p>مدير العمليات</p>
+                            <h4>Mohamed Fathy</h4>
+                            <p>Operations Manager</p>
                         </div>
                     </div>
                 </div>
@@ -1394,13 +1441,13 @@
                         <i class="fas fa-star-half-alt"></i>
                     </div>
                     <p class="quote">
-                        "التزام عبدالله ودقته في العمل جعلا منه شريكاً موثوقاً في مشاريع تحليل البيانات."
+                        "Abdelallah's commitment and attention to detail made him a trusted partner in data analysis projects."
                     </p>
                     <div class="author">
-                        <div class="avatar">ن</div>
+                        <div class="avatar">NH</div>
                         <div class="info">
-                            <h4>نورا حسن</h4>
-                            <p>مسؤول التسويق الرقمي</p>
+                            <h4>Nora Hassan</h4>
+                            <p>Digital Marketing Lead</p>
                         </div>
                     </div>
                 </div>
@@ -1408,23 +1455,23 @@
         </div>
     </section>
 
-    <!-- ============================================= -->
-    <!-- ===== CONTACT ===== -->
-    <!-- ============================================= -->
+    <!-- ============================================ -->
+    <!-- ===== 10 - CONTACT ===== -->
+    <!-- ============================================ -->
     <section class="section section-alt" id="contact">
         <div class="container">
-            <h2 class="section-title"><i class="fas fa-envelope"></i> اتصل بي</h2>
-            <p class="section-sub">تواصل معي وسأرد عليك في أقرب وقت</p>
+            <h2 class="section-title"><i class="fas fa-envelope"></i> Contact Me</h2>
+            <p class="section-sub">Get in touch and I'll respond as soon as possible</p>
             <div class="contact-wrapper">
                 <div class="contact-info">
-                    <h3>أنا هنا لمساعدتك</h3>
+                    <h3>I'm here to help</h3>
                     <p>
-                        هل لديك سؤال، مشروع تريد مناقشته، أو مجرد تريد أن تقول مرحباً؟
-                        لا تتردد في التواصل معي.
+                        Have a question, a project to discuss, or just want to say hello?
+                        Don't hesitate to reach out.
                     </p>
                     <div class="contact-detail">
                         <i class="fas fa-phone"></i>
-                        <a href="tel:+201064057560">01064057560</a>
+                        <a href="tel:+201064057560">+20 106 405 7560</a>
                     </div>
                     <div class="contact-detail">
                         <i class="fas fa-envelope"></i>
@@ -1440,15 +1487,15 @@
                     </div>
                     <div class="contact-detail">
                         <i class="fas fa-map-marker-alt"></i>
-                        <span>الشروق، القاهرة، مصر</span>
+                        <span>EL Shorouk, Cairo, Egypt</span>
                     </div>
                 </div>
                 <form class="contact-form" action="#" method="POST">
-                    <input type="text" placeholder="الاسم الكامل" required />
-                    <input type="email" placeholder="البريد الإلكتروني" required />
-                    <input type="text" placeholder="الموضوع" />
-                    <textarea placeholder="اكتب رسالتك هنا..." required></textarea>
-                    <button type="submit" class="btn btn-primary">إرسال الرسالة</button>
+                    <input type="text" placeholder="Full Name" required />
+                    <input type="email" placeholder="Email Address" required />
+                    <input type="text" placeholder="Subject" />
+                    <textarea placeholder="Your Message..." required></textarea>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
                 </form>
             </div>
         </div>
@@ -1464,7 +1511,7 @@
                 <a href="#"><i class="fab fa-twitter"></i></a>
                 <a href="#"><i class="fab fa-youtube"></i></a>
             </div>
-            <p> عبدالله محمد <span class="heart">❤️</span></p>
+            <p>© 2025 Abdelallah Mohamed — All rights reserved. Made with <span class="heart">❤️</span></p>
         </div>
     </footer>
 
@@ -1477,7 +1524,6 @@
             navLinks.classList.toggle('open');
         });
 
-        // Close menu when link is clicked (mobile)
         navLinks.querySelectorAll('a').forEach(link => {
             link.addEventListener('click', () => {
                 navLinks.classList.remove('open');
